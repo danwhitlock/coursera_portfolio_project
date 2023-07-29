@@ -2,16 +2,18 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0px 5px 5px 5px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .page_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto 1fr 1fr auto; 
-    gap: 10px;
+    gap: 20px;
     height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 /* HEADER */
@@ -29,7 +31,6 @@ header {
 /* NAVIGATION */
 
 nav {
-    border: 1px solid green;
     grid-column: 1 / 4;
     background-color: #26877F;
     border-radius: 10px;
@@ -46,10 +47,12 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #FFF;
+    font-size: 1.25rem;
 }
 
 nav a:hover {
-    color: #B53434;
+    color:#b55d34;
+    cursor: pointer;
 }
 
 /* MAIN */
@@ -60,7 +63,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
 }
 
 .promo {
@@ -82,25 +85,28 @@ main {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.7);
     display: inline-block;
-    padding: 15px;
+    padding: 25px;
     border-radius: 10px;
 }
 
- .promo h2 {
+ .offer h2 {
     color: #FFF;
     font-style: italic;
+    font-size: 2rem;
 }
 
 button {
     background-color: #26877F;
     border: none;
     border-radius: 5px;
-    padding: 5px 15px;
+    padding: 10px 20px;
     color: #FFF;
+    font-size: 1.25rem;
 }
 
 button:hover {
-    color: #B53434;
+    color: #b55d34;
+    cursor: pointer;
 }
 
 .example {
@@ -115,6 +121,13 @@ button:hover {
     display: inline-block;
     padding: 15px;
     border-radius: 10px;
+    font-style: italic;
+}
+
+.example h3:hover {
+    font-size: 1.25rem;
+    transition-duration: 0.3s;
+    cursor: pointer;
 }
 
 .example_one {
@@ -146,7 +159,7 @@ button:hover {
 footer {
     grid-column: 1 / 4;
     display: flex;
-    gap: 30px;
+    gap: 10px;
 }
 
 .footer_left, .footer_right {
