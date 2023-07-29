@@ -2,14 +2,14 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .page_container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto 1fr 1fr auto; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto) repeat(2, 1fr) auto; 
     gap: 20px;
     height: 100vh;
     padding: 20px;
@@ -61,17 +61,15 @@ main {
     grid-column: 1 / 4;
     grid-row: 3 / 5;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 20px;
 }
 
 .promo {
     grid-column: 1 / 4;
-    background-image: url(./img/promo.jpg);
+    background: #fff url(./img/promo.jpg) no-repeat center;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -113,6 +111,9 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
+    background-size: 100%;
+    background-position: center;
 }
 
 .example h3 {
@@ -131,27 +132,18 @@ button:hover {
 }
 
 .example_one {
-    grid-column: 1 / 2;
-    border-radius: 10px;
+    grid-column: 1;
     background-image: url(./img/gardener.jpg);
-    background-size: 100%;
-    background-position: center;
 }
 
 .example_two {
-    grid-column: 2 / 3;
-    border-radius: 10px;
+    grid-column: 2;
     background-image: url(./img/customers.jpg);
-    background-size: 100%;
-    background-position: center;
 }
 
 .example_three {
-    grid-column: 3 / 4;
-    border-radius: 10px;
+    grid-column: 3;
     background-image: url(./img/nursery.jpg);
-    background-size: 100%;
-    background-position: center;
 }
 
 /* FOOTER */
