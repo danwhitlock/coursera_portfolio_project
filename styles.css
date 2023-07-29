@@ -10,7 +10,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto 1fr 1fr auto; 
-    gap: 5px;
+    gap: 10px;
     height: 100vh;
 }
 
@@ -60,20 +60,61 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 5px;
+    gap: 10px;
 }
 
 .promo {
     grid-column: 1 / 4;
-    background-image: url(./img/promo_copy.jpeg);
-    background-size: 100% 100%;
+    background-image: url(./img/promo.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+ .promo h2 {
+    color: #FFF;
+    font-style: italic;
+}
+
+button {
+    background-color: #26877F;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: #FFF;
+}
+
+button:hover {
+    color: #B53434;
 }
 
 .example {
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.example h3 {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .example_one {
